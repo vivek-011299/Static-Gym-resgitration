@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beast Fitness Club</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+<style>
+    body{
+        font-family: 'Balsamiq Sans', cursive;
+        background: url('https://cdn.pixabay.com/photo/2017/01/09/11/30/dumbbell-1966247_1280.jpg');
+    }
+    .left
+    {
+        display: inline-block;
+        top: 15px;
+        left: 30px;
+        position: absolute;
+        width: 8%;
+    }
+    .mid
+    {
+        display: block;
+        width: 65%;
+        margin: 15px 165px;
+        border-radius: 15px;
+        background-color: rgba(138, 103, 7, 0.185);
+    }
+    .right
+    {
+        display: inline-block;
+        position: absolute;
+        top: 13px;
+        right: 40px;
+        
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 25px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 30px 30px;
+    }
+    .navbar li a:hover{
+        text-decoration: underline;
+        color:grey;
+    }
+    .navbar li a.active
+    {
+        color: grey;
+        text-decoration: underline;
+    }
+    .left img{
+        width: 60px;
+        margin: 1px 19px;
+        
+    }
+    .left div
+    {
+        font-size: 15px;
+        color: white;
+        text-align: center;
+    }
+    .btn
+    {
+        color: rgb(255, 255, 255);
+        background-color: rgb(41, 41, 41);
+        padding: 10px 10px;
+        margin: 10px 10px;
+        border: 2px solid grey;
+        border-radius: 4px;
+        font-size: 15px;
+        font-family: 'Balsamiq Sans', cursive;
+    }
+    .btn:hover{
+        background-color: black;
+        text-decoration: underline;
+    }
+    .container
+    {
+    color: rgb(255, 255, 255);
+    width: 57%;
+    margin: 40px 90px;
+    padding: 35px 20px;
+    font-size: 30px;
+    border-radius: 15px;
+    background-color: rgba(114, 88, 3, 0.11);
+    }
+    .radiobtn
+    {
+        font-size: 20px;
+        text-align: center;
+    }
+    .written
+    {
+        font-size: 25px;
+        text-align: center;
+    }
+    .container button
+    {   
+        display: block;
+        padding: 10px 10px;
+        width: 20%;
+        margin: 15px auto;
+        font-family: 'Balsamiq Sans', cursive;
+        font-size: 25px;
+        background-color: rgba(175, 127, 5, 0.966);
+    }
+    .container button:hover
+    {   
+        display: block;
+        padding: 10px 10px;
+        width: 20%;
+        margin: 15px auto;
+        font-family: 'Balsamiq Sans', cursive;
+        font-size: 25px;
+        background-color: rgba(156, 114, 9, 0.171);
+        text-decoration: underline;
+        color: rgb(233, 217, 198);
+    }
+    .formgroup input
+    {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        display: block;
+        margin: 12px auto;
+        width: 400px;
+        padding: 18px 16px;
+        border: 1px solid rgb(29, 1, 23);
+        border-radius: 10px;
+        font-family: 'Balsamiq Sans', cursive;
+    }
+    h3
+    {
+        text-align: center;
+    }
+</style>
+<body>
+    <header class="header" >
+        <div class="left">
+            <img src="https://lh3.googleusercontent.com/proxy/UHZJm92Kb_PmnGAry8KJnb1E4x5Q1Eakc_MwYZhBZpO0zDVHSaue1135vsRi3h6ELNhI2h5FPB7-IrtOa8cdcWzM2yaR2sFTwWzow2gbtCxMCp919VO4d1aRbrDJpeeZQ5k" alt="">
+            <div>Beast Fitness</div>
+            <div>Club</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+           <div> 
+            <button class="btn">Sign Up</button>
+               <button class="btn">Log In</button>
+           </div>
+        </div>
+    </header>
+    <div class="container">
+        <h3>Register here! It's Free</h3>
+        <form action="noaction.php">
+            <div class="formgroup" >
+                <input type="text" placeholder="Enter your NAME">
+            </div>
+            <div class="formgroup" >
+                <input type="number" placeholder="Enter your AGE">
+            </div>
+            <div class="formgroup">
+                <input type="text" placeholder="Enter your GENDER">
+            </div>
+            <div class="formgroup" >
+                <input type="email" placeholder="Enter your EMAIL-ID">
+            </div>
+            <div class="formgroup" >
+                <input type="number" placeholder="Enter your Contact No.">
+            </div>
+            <div class="written"> 
+                How much are you experienced in Body Building?
+            </div>
+            <div class="radiobtn">
+                Beginner<input type="radio">
+                Intermediate <input type="radio">
+                Professional <input type="radio">
+            </div>
+            <div>
+                <button>
+                    Submit
+                </button>
+        </div>
+        </form>
+    </div>
+</body>
+</html>
